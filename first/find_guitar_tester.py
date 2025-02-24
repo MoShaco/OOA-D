@@ -17,7 +17,8 @@ def main() -> None:
         model="Stratocaster", 
         type=Type.ELECTRIC, 
         back_wood=Wood.ALDER, 
-        top_wood=Wood.MAPLE
+        top_wood=Wood.MAPLE,
+        num_strings=12
         )
     
     inventory.add_guitar(
@@ -27,7 +28,8 @@ def main() -> None:
         model="Stratocaster", 
         type=Type.ELECTRIC, 
         back_wood=Wood.ALDER, 
-        top_wood=Wood.MAPLE
+        top_wood=Wood.MAPLE,
+        num_strings=6
         )
     
     inventory.add_guitar(
@@ -37,7 +39,8 @@ def main() -> None:
         model="Stratocaster", 
         type=Type.ACOUSTIC, 
         back_wood=Wood.ALDER, 
-        top_wood=Wood.MAPLE
+        top_wood=Wood.MAPLE,
+        num_strings=12
         )
 
     # Print out all of the guitars
@@ -61,7 +64,8 @@ def main() -> None:
         model="Stratocaster", 
         type=Type.ELECTRIC, 
         back_wood=Wood.ALDER, 
-        top_wood=Wood.MAPLE
+        top_wood=Wood.MAPLE,
+        num_strings=12
         )
     
     matching_guitars: list[Guitar] = inventory.search(what_errik_likes)

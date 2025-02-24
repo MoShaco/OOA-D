@@ -1,19 +1,21 @@
+from guitar_spec import GuitarSpec
 from type import Type
 from builder import Builder
 from wood import Wood
-from guitar_spec import GuitarSpec
 
 
 class Guitar:
-    def __init__(self, serial_number: str, price: float, builder: Builder, model: str, type: Type, back_wood: Wood, top_wood: Wood) -> None:
+    def __init__(self, serial_number: str, price: float, builder: Builder, model: str, type: Type, back_wood: Wood, top_wood: Wood, num_strings: int) -> None:
         self._serial_number = serial_number
         self._price = price
-        self._spec = GuitarSpec(builder=builder, model=model, type=type, back_wood=back_wood, top_wood=top_wood)
-        # self._builder = builder
-        # self._model = model
-        # self._type = type
-        # self._back_wood = back_wood
-        # self._top_wood = top_wood
+        self._spec = GuitarSpec(
+             builder=builder, 
+             model=model, 
+             type=type, 
+             back_wood=back_wood, 
+             top_wood=top_wood, 
+             num_strings=num_strings
+             )
 
 
     @property
