@@ -10,13 +10,10 @@ def main():
     remote.press_button()
 
     print("Fido has gone outside... ")
-    remote.press_button()
 
     print("Fido's all done...")
-    remote.press_button()
     
     print("Fido's back inside... ")
-    remote.press_button()
 
 
 
