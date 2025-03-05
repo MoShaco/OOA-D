@@ -1,5 +1,5 @@
 from dog_door import DogDoor
-
+import threading
 class Remote:
     def __init__(self, door: DogDoor):
         self._door = door
@@ -15,3 +15,6 @@ class Remote:
             self.door.close()
         else:
             self.door.open()
+        
+        timer = threading.Timer(5.0, self.door.close)
+        timer.start()
